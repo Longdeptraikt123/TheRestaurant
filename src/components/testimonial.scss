@@ -1,0 +1,107 @@
+.testimonial {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .testimonial_heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-transform: capitalize;
+
+        h1 {
+            padding: 20px 0;
+            font-size: 65px;
+            color: #DCCA87;
+            letter-spacing: 0.2rem;
+            margin: 5px 0;
+            font-family: 'Cormorant Upright', serif;
+
+        }
+
+        span {
+            color: #fff;
+            font-style: italic;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .testimonial_images {
+        display: flex;
+        margin: 2rem 0;
+        align-items: center;
+        flex-direction: row;
+        max-width: 80%;
+        position: relative;
+
+        .testimonial_images_container {
+            display: flex;
+            width: min-content;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .testimonial_images_card {
+                position: relative;
+                margin-right: 30px;
+                min-width: 310px;
+                height: 500px;
+
+                &:hover img {
+                    opacity: 0.35;
+                    cursor: pointer;
+                }
+
+                &:hover .instagram {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s ease;
+                    border-radius: 10px;
+                }
+
+                .instagram {
+                    position: absolute;
+                    color: #fff;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 2rem;
+                    transition: 0.5s ease;
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        .testimonial_images_arrow {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 5%;
+            font-size: 2rem;
+            color: crimson;
+            cursor: pointer;
+            padding: 0 1rem;
+            opacity: 0.5;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
