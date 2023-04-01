@@ -15,8 +15,8 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/login' element={<LogIn />}></Route>
-        <Route path='/' element={<RoutesComponent />}></Route>
+        <Route exact path='/login' element={<LogIn />}></Route>
+        <Route exact path='/' element={<RoutesComponent />}></Route>
       </Routes>
 
     </>
