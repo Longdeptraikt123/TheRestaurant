@@ -16,9 +16,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/login' element={<LogIn />}></Route>
+        <Route path='/TheRestaurant' element={<RoutesComponent />}></Route>
       </Routes>
-      <RoutesComponent/>
-
     </>
   );
 }
