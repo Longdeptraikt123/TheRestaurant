@@ -8,7 +8,7 @@ import data from "./data";
 const Testimonial = () => {
     const scrollRef = useRef(null)
     const scroll = (direction) => {
-        // su dung destructing cho current de vua gan current vua lay' duoc current
+        // su dung destructing cho current để vừa gán current vừa lấy được current
         const { current } = scrollRef
         direction === 'left' ? current.scrollLeft -= 300 : current.scrollLeft += 300
     }

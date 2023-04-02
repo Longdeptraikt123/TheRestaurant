@@ -5,6 +5,7 @@ import { MdOutlineRestaurantMenu } from 'react-icons/md'
 
 
 const Navbar = () => {
+    // create function scroll to top for Navbar images
     const [isShow, setIsShow] = useState(false)
     const scrollToTop = () => {
         window.scrollTo(0, 0)
@@ -19,7 +20,10 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleShow)
     }, [])
 
+    // create toggle hamburger for small screen
+
     const [toggleMenu, setToggleMenu] = useState(false)
+
     return (
         <div className={`navbar ${isShow && 'navbar_grey'}`}>
             <div onClick={scrollToTop} className='navbar_logo'>
@@ -35,7 +39,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='navbar_log-in'>
-                <a href='/login' className='navbar_link'>Log in / Register</a>
+                <a href='/TheRestaurant/login' className='navbar_link'>Log in / Register</a>
                 <div />
                 <a href='#booking' className='navbar_link'>Book Table</a>
             </div>
