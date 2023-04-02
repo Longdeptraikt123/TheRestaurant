@@ -29,6 +29,7 @@ const Navbar = () => {
             <div onClick={scrollToTop} className='navbar_logo'>
                 <span>Ｒｅｓｔａｕｒａｎｔ</span>
             </div>
+            {/* navbar links */}
             <div className='navbar_links'>
                 <ul>
                     <li className='navbar_link'><a href='/TheRestaurant' >Home</a></li>
@@ -38,11 +39,15 @@ const Navbar = () => {
                     <li className='navbar_link'><a href='#testimonial'>Testimonial</a></li>
                 </ul>
             </div>
+
+            {/* navbar log-in and booking link */}
             <div className='navbar_log-in'>
                 <a href='/TheRestaurant/login' className='navbar_link'>Log in / Register</a>
                 <div />
                 <a href='#booking' className='navbar_link'>Book Table</a>
             </div>
+
+            {/* navbar small screen */}
             <div className='navbar_links_hamburger_small-screen'>
                 <RxHamburgerMenu color='#fff' fontSize={25} onClick={() => setToggleMenu(true)} />
                 {toggleMenu && (

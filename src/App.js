@@ -14,9 +14,11 @@ function App() {
   return (
     <>
       <Navbar />
+
+      {/* Home and Log-in */}
       <Routes>
-        <Route path='/TheRestaurant/login' element={<LogIn />}></Route>
         <Route path='/TheRestaurant' element={<RoutesComponent />}></Route>
+        <Route path='/TheRestaurant/login' element={<LogIn />}></Route>
       </Routes>
     </>
   );
