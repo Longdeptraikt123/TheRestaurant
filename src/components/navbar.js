@@ -45,7 +45,7 @@ const Navbar = () => {
                     <div className='navbar_links_main_small-screen'>
                         <MdOutlineRestaurantMenu className='navbar_links_main_small-screen_close' fontSize={25} onClick={() => setToggleMenu(false)} />
                         <ul className='navbar_links_main_small-screen-ul'>
-                            <li className='navbar_link'><a onClick={() => setToggleMenu(false)} href='/'>Home</a></li>
+                            <li className='navbar_link'><a onClick={() => setToggleMenu(false)} href='/TheRestaurant'>Home</a></li>
                             <li className='navbar_link'><a onClick={() => setToggleMenu(false)} href='#about-us'>About us</a></li>
                             <li className='navbar_link'><a onClick={() => setToggleMenu(false)} href='#menu'>Menu</a></li>
                             <li className='navbar_link'><a onClick={() => setToggleMenu(false)} href='#chef'>Chef</a></li>
