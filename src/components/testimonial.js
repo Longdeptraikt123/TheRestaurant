@@ -10,7 +10,7 @@ const Testimonial = () => {
     const scroll = (direction) => {
         // su dung destructing cho current de vua gan current vua lay' duoc current
         const { current } = scrollRef
-        destination === 'left' ? current.scrollLeft -= 300 : current.scrollLeft += 300
+        direction === 'left' ? current.scrollLeft -= 300 : current.scrollLeft += 300
     }
     return (
         <div style={{
