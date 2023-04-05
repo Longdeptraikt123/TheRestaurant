@@ -32,17 +32,17 @@ const Navbar = () => {
             {/* navbar links */}
             <div className='navbar_links'>
                 <ul>
-                    <li className='navbar_link'><a href='/' >Home</a></li>
-                    <li className='navbar_link'><a href='/#about-us'>About us</a></li>
-                    <li className='navbar_link'><a href='/#menu'>Menu</a></li>
-                    <li className='navbar_link'><a href='/#chef'>Chef</a></li>
-                    <li className='navbar_link'><a href='/#testimonial'>Testimonial</a></li>
+                    <li className='navbar_link'><a href='#home' >Home</a></li>
+                    <li className='navbar_link'><a href='#about-us'>About us</a></li>
+                    <li className='navbar_link'><a href='#menu'>Menu</a></li>
+                    <li className='navbar_link'><a href='#chef'>Chef</a></li>
+                    <li className='navbar_link'><a href='#testimonial'>Testimonial</a></li>
                 </ul>
             </div>
 
             {/* navbar log-in and booking link */}
             <div className='navbar_log-in'>
-                <a href='/login' className='navbar_link'>Log in / Register</a>
+                <a href='/TheRestaurant/login' className='navbar_link'>Log in / Register</a>
                 <div />
                 <a href='#booking' className='navbar_link'>Book Table</a>
             </div>
