@@ -14,13 +14,15 @@ function App() {
   return (
     <>
       <Navbar />
+
+      {/* Home and Log-in */}
       <Routes>
+        <Route path='/' element={<RoutesComponent />}></Route>
         <Route path='/login' element={<LogIn />}></Route>
       </Routes>
-      <RoutesComponent/>
-
     </>
   );
 }
+
 
 export default App;

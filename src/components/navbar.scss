@@ -161,5 +161,6 @@
 
 .navbar_grey {
     @extend .navbar;
-    background-color: #222;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
 }
