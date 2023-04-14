@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className='navbar_log-in'>
                 <a href='/login' className='navbar_link'>Log in / Register</a>
                 <div />
-                <a href='#booking' className='navbar_link'>Book Table</a>
+                <a href='/#booking' className='navbar_link'>Book Table</a>
             </div>
 
             {/* navbar small screen */}
